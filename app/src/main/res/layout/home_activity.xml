@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblue">
+
+        <ImageView
+            android:id="@+id/phedlogoo"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="@drawable/firstphed"
+            android:layout_below="@id/Print"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:id="@+id/text_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHED"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="80sp"
+            android:layout_below="@id/phedlogoo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/text_home_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DUPLICATE BILLING"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:layout_below="@id/phedlogoo"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btn_duplicate_bill"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button"
+            android:text="CLICK HERE TO PRINT DUPLICATE BILL"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
+

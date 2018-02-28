@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblue"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnview"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            android:text="GET BILL"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/edtid"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:text="Scan"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/btnview"
+            android:layout_toLeftOf="@+id/Print"
+            android:layout_toStartOf="@+id/Print" />
+
+        <Button
+            android:id="@+id/Print"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:text="Print"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/scan"
+            android:layout_toLeftOf="@+id/close"
+            android:layout_toStartOf="@+id/close" />
+        <Button
+            android:id="@+id/close"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:text="Close"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_above="@+id/phedlogoo"
+            android:layout_alignRight="@+id/lbl_account_num"
+            android:layout_alignEnd="@+id/lbl_account_num" />
+
+
+        <EditText
+            android:id="@+id/edtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ENTER ACOUNT NUMBER HERE"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/phedlogoo"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/firstphed"
+            android:layout_below="@id/Print"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="PHED DUPLICATE BILL"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:layout_below="@id/phedlogoo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_account_num"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Account Number: "
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/text_bill_title"/>
+
+        <TextView
+            android:id="@+id/lbl_account_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/text_bill_title"
+            android:layout_toRightOf="@id/text_account_num"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_customer_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Customer Name: "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/text_account_num"/>
+
+        <TextView
+            android:id="@+id/lbl_customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/lbl_account_num"
+            android:layout_toRightOf="@id/text_customer_name"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Address: "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/text_customer_name"/>
+
+        <TextView
+            android:id="@+id/lbl_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/lbl_customer_name"
+            android:layout_toRightOf="@id/text_address"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_month"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Year/Month: "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/text_address"/>
+
+        <TextView
+            android:id="@+id/lbl_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/lbl_address"
+            android:layout_toRightOf="@id/text_month"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_current_charge"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Current Charge(=N=): "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/text_month"/>
+
+        <TextView
+            android:id="@+id/lbl_current_charge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/lbl_month"
+            android:layout_toRightOf="@id/text_current_charge"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_vat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="VAT(=N=): "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/text_current_charge"/>
+
+        <TextView
+            android:id="@+id/lbl_vat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/lbl_current_charge"
+            android:layout_toRightOf="@id/text_vat"
+            android:layout_marginLeft="16dp"/>
+
+
+
+        <TextView
+            android:id="@+id/text_arrears"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Arrears (=N=): "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/text_vat"/>
+
+        <TextView
+            android:id="@+id/lbl_arrears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/lbl_vat"
+            android:layout_toRightOf="@id/text_arrears"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_amount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="AMOUNT (=N=): "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/text_arrears"/>
+
+        <TextView
+            android:id="@+id/lbl_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/lbl_arrears"
+            android:layout_toRightOf="@id/text_amount"
+            android:layout_marginLeft="16dp"/>
+
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="TOTAL DUE (=N=): "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_below="@id/text_amount"/>
+
+        <TextView
+            android:id="@+id/lbl_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/lbl_amount"
+            android:layout_toRightOf="@id/text_total"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/lbl_total"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
