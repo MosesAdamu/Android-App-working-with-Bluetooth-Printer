@@ -1,8 +1,6 @@
 package com.example.android.printtesttwo;
 
-/**
- * Created by hp on 12/23/2016.
- */
+
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
