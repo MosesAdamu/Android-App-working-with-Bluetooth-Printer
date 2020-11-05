@@ -8,9 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * Created by MOSES on 8/16/2017.
- */
+
 public class HomeActivity extends Activity {
 
     ImageView logoImage;
