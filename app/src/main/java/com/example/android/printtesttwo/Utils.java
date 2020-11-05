@@ -6,9 +6,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by MOSES on 8/15/2017.
- */
+
 public class Utils {
     // UNICODE 0x23 = #
     public static final byte[] UNICODE_TEXT = new byte[] {0x23, 0x23, 0x23,
