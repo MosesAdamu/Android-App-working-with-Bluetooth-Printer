@@ -1,8 +1,6 @@
 package com.example.android.printtesttwo;
 
-/**
- * Created by MOSES on 8/15/2017.
- */
+
 public class PrinterCommands {
     public static final byte HT = 0x9;
     public static final byte LF = 0x0A;
