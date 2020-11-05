@@ -3,9 +3,6 @@ package com.example.android.printtesttwo;
 import android.provider.ContactsContract;
 
 
-/**
- * Created by MOSES on 8/16/2017.
- */
 public class Contents {
 
 
